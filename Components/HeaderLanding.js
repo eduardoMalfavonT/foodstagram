@@ -17,10 +17,7 @@ export default class HeaderLanding extends React.Component {
       <Container style={styles.HeaderLandingContainer}>
         <Header style={styles.HeaderContainer}>
           <Left style={styles.Left}>
-            <Button
-              transparent
-              onPress={() => alert("Boton izquierdo presionado")}
-            >
+            <Button transparent onPress={() => this.props.openDrawer()}>
               <Icon style={styles.icon} name="ios-menu" />
             </Button>
           </Left>

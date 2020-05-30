@@ -7,7 +7,7 @@ export default function App() {
   return (
     <NativeRouter>
       <Route exact path="/" component={LunchScreen} />
-      <Route exact path="/FoodScreen" component={FoodScreen} />
+      <Route exact path="/FoodScreen/:Food" component={FoodScreen} />
     </NativeRouter>
   );
 }

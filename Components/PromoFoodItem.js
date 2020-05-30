@@ -7,8 +7,8 @@ export default class PromoFoodItem extends React.Component {
   render() {
     const { image, text } = this.props;
     return (
-      <TouchableOpacity onPress={() => alert(text)}>
-        <Link to="/FoodScreen">
+      <TouchableOpacity>
+        <Link to={`/FoodScreen/${text}`}>
           <View style={styles.foodCard}>
             <View>
               <Image style={styles.img} source={image} resizeMode="contain" />

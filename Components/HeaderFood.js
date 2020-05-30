@@ -18,10 +18,7 @@ export default class HeaderFood extends React.Component {
       <Container style={styles.HeaderLandingContainer}>
         <Header style={styles.HeaderContainer}>
           <Left style={styles.Left}>
-            <Button
-              transparent
-              onPress={() => alert("Boton retroceso presionado")}
-            >
+            <Button transparent>
               <Link to="/">
                 <Icon style={styles.icon} name="md-arrow-back" />
               </Link>

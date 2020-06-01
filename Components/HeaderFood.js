@@ -28,15 +28,14 @@ export default class HeaderFood extends React.Component {
             <Text style={styles.titleText}>Foodstagram</Text>
           </Body>
           <Right style={styles.Right}>
-            <Button
-              transparent
-              onPress={() => alert("Boton derecho presionado")}
-            >
-              <Icon
-                style={styles.icon}
-                type={"FontAwesome5"}
-                name="shopping-cart"
-              />
+            <Button transparent>
+              <Link to="/Cart">
+                <Icon
+                  style={styles.icon}
+                  type={"FontAwesome5"}
+                  name="shopping-cart"
+                />
+              </Link>
             </Button>
           </Right>
         </Header>

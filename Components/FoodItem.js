@@ -2,10 +2,12 @@ import React from "react";
 import { TouchableOpacity, View, Text, Image } from "react-native";
 import img from "../images/burger.jpg";
 import styles from "../Styles/Components/FoodItemStyles";
+import { Link } from "react-router-native";
 
 export default () => {
   return (
-    <TouchableOpacity onPress={() => alert("FoodItem presionado")}>
+    <TouchableOpacity>
+      <Link to='/FoodDetails'>
       <View style={styles.foodItemView}>
         <View style={styles.priceView}>
           <Text style={styles.price}>10$</Text>
@@ -22,6 +24,7 @@ export default () => {
           </View>
         </View>
       </View>
+      </Link>
     </TouchableOpacity>
   );
 };
